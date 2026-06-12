@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "5d65a750-cfdd-406b-a751-75c0cab933bc",
+    "title": "building task management",
+    "description": "this is test task for testing purpose",
+    "status": "pending",
+    "userId": "c1f47b9b-dbc4-4252-a3b1-03fda4f84ba6",
+    "createdAt": "2026-06-12T11:08:22.672Z"
+  }
+]

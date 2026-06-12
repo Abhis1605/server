@@ -1,14 +1,10 @@
 import { Router } from "express";
 import requireAuth from "../middlewares/requireAuth.js";
+import { createTask } from "../controllers/task.controller.js";
 
 const taskRoute = Router()
 
-// just test route for the task to check only users can access this route
-taskRoute.get('/', requireAuth, (req, res) => {
-    res.json({
-        message: "User tasks",
-        user: req.user
-    })
-})
+// POST /api/tasks
+taskRoute.post("/", requireAuth, createTask)
 
 export default taskRoute
