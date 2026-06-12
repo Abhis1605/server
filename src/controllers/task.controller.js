@@ -100,5 +100,40 @@ async function updateTask(req, res){
     }
 }
 
+async function deleteTask(req, res){
+    try {
+        const { id } = req.params
 
-export { createTask, getTasks, updateTask }
+        const tasks = await readTasks()
+
+        const task = tasks.find((t) => t.id === id)
+
+        if (!task) {
+            return res.status(404).json({
+                message: "Task not found"
+            })
+        }
+
+        if (task.userId !== req.user.id) {
+            return res.status(403).json({
+                message: "Forbidden: Not your task"
+            })
+        }
+
+        const updatedTasks = tasks.filter((t) => t.id !== id)
+
+        await writeTasks(updatedTasks)
+
+        res.status(200).json({
+            message: "Task deleted successfully"
+        })
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({
+            message: "Internal server error"
+        })
+    }
+}
+
+
+export { createTask, getTasks, updateTask, deleteTask }

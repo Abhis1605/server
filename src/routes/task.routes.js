@@ -1,6 +1,6 @@
 import { Router } from "express";
 import requireAuth from "../middlewares/requireAuth.js";
-import { createTask, getTasks, updateTask } from "../controllers/task.controller.js";
+import { createTask, deleteTask, getTasks, updateTask } from "../controllers/task.controller.js";
 
 const taskRoute = Router()
 
@@ -12,5 +12,8 @@ taskRoute.get('/', requireAuth, getTasks)
 
 // PATCH /api/tasks/:id -- to update based on id
 taskRoute.patch('/:id', requireAuth, updateTask)
+
+// DELETE /api/tasks/:id -- to delete task by id
+taskRoute.delete('/:id', requireAuth, deleteTask)
 
 export default taskRoute
