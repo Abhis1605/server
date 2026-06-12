@@ -1,21 +1,10 @@
 import { Router } from "express";
 import requireAuth from "../middlewares/requireAuth.js";
 import requireAdmin from "../middlewares/requiredAdmin.js";
+import { getAllUsersForAdmin } from "../controllers/admin.controller.js";
 
 const adminRoute = Router()
 
-// basic route for testing users can not access this route
-adminRoute.get('/users', requireAuth, requireAdmin, (req, res) => {
-    res.json({
-        message: "All users"
-    })
-})
-
-adminRoute.get('/tasks', requireAuth, requireAuth, (req, res) =>{
-    res.json({
-        message: "all tasks"
-    })
-})
-
+adminRoute.get('/users', requireAuth, requireAdmin, getAllUsersForAdmin)
 
 export default adminRoute
