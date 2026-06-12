@@ -38,4 +38,25 @@ async function createTask(req, res){
     }
 }
 
-export { createTask }
+async function getTasks(req, res){
+    try {
+        const tasks = await readTasks()
+
+        const userTasks = tasks.filter(
+            (task) => task.userId === req.user.id
+        )
+
+        res.status(200).json({
+            message: "Tasks fetched successfully",
+            userTasks
+        })
+    } catch (error) {
+        console.error(error)
+        res.status(500).json({
+            message: "Internal server error"
+        })
+    }
+}
+
+
+export { createTask, getTasks }
