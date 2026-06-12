@@ -4,6 +4,7 @@ dotenv.config()
 
 const requiredEnvVars = [
     "PORT",
+    "JWT_SECRET"
 ]
 
 requiredEnvVars.forEach((key) => {
@@ -14,6 +15,7 @@ requiredEnvVars.forEach((key) => {
 
 const config = {
     PORT : process.env.PORT,
+    JWT_SECRET: process.env.JWT_SECRET
 }
 
 export default config

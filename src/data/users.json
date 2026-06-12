@@ -4,5 +4,19 @@
     "username": "admin",
     "password": "$2b$10$m1CRN12bZIG0I9/dlFDkQuflTWJvEPIHzsMT2tU4YrXgLEnuNCMBy",
     "role": "admin"
+  },
+  {
+    "id": "b34c7b83-190d-42e4-a8a6-4bf363618a37",
+    "username": "test_user",
+    "password": "$2b$10$oGUgAiZCJo3JUHV0fk0B/eJAranTdagw66b5KfwEMknfyZ4cbxTb2",
+    "role": "user",
+    "createdAt": "2026-06-12T10:04:50.214Z"
+  },
+  {
+    "id": "c1f47b9b-dbc4-4252-a3b1-03fda4f84ba6",
+    "username": "test_user16",
+    "password": "$2b$10$L0WDYJdRTSO8PZnfNmBXkODHZfm6pgVTUyXSoOkYjtDxjhy2IUi1G",
+    "role": "user",
+    "createdAt": "2026-06-12T10:07:14.548Z"
   }
 ]
