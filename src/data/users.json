@@ -1,11 +1,5 @@
 [
   {
-    "id": "admin-id",
-    "username": "admin",
-    "password": "$2b$10$m1CRN12bZIG0I9/dlFDkQuflTWJvEPIHzsMT2tU4YrXgLEnuNCMBy",
-    "role": "admin"
-  },
-  {
     "id": "b34c7b83-190d-42e4-a8a6-4bf363618a37",
     "username": "test_user",
     "password": "$2b$10$oGUgAiZCJo3JUHV0fk0B/eJAranTdagw66b5KfwEMknfyZ4cbxTb2",
@@ -18,5 +12,25 @@
     "password": "$2b$10$L0WDYJdRTSO8PZnfNmBXkODHZfm6pgVTUyXSoOkYjtDxjhy2IUi1G",
     "role": "user",
     "createdAt": "2026-06-12T10:07:14.548Z"
+  },
+  {
+    "id": "f5bb7fb2-15cf-460d-bb7a-9ad6ea9371b7",
+    "username": "vishal_16",
+    "password": "$2b$10$EQjQe0G8nXwPl3hP6h3nUeB51kVI04qGXC1Jy.kvz3o4AzrHFJMoS",
+    "role": "user",
+    "createdAt": "2026-06-12T13:07:09.136Z"
+  },
+  {
+    "id": "admin-id",
+    "username": "admin",
+    "password": "$2b$10$U2gB6V8llD8OhGJS/E/7QON7.tCsRZqmk18.hRUdT0xCWkf3bWX8K",
+    "role": "admin"
+  },
+  {
+    "id": "5b271f67-e009-42a4-8364-1c570492cf65",
+    "username": "Abhi!23",
+    "password": "$2b$10$nKP6MNzVQWvQFznY/XkkS.imc01RegAh7xYOhmywJbU.9xcr.tl42",
+    "role": "user",
+    "createdAt": "2026-06-12T14:25:45.350Z"
   }
 ]
